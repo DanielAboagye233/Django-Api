@@ -81,10 +81,15 @@ MyCart is a Django REST API project designed to manage blog posts and user authe
 - **Create post**: `POST /api/posts/`
 - **Update post**: `PUT /api/posts/{id}/`
 - **Delete post**: `DELETE /api/posts/{id}/`
+- **Search posts**: `GET /api/posts/search/`
 
 ### User Registration
-- **Register new user**: `POST /api/users/register/`
+- **Register new user**: `POST /api/user/register/`
 
 ### Authentication
-- **Obtain JWT tokens**: *(Depends on your JWT setup)*
-- **Logout (token blacklist)**: `POST /api/users/logout/`
+- **Obtain JWT tokens**: `POST /api/token/`
+- **Refresh JWT token**: `POST /api/token/refresh/`
+- **Logout (token blacklist)**: `POST /api/user/logout/`
+
+- Updated API Endpoints section in README.md
+
